@@ -12,7 +12,9 @@ module.exports = {
       './src/styles/markdown.css',
     ],
     vendor: [
+      'expose?echarts!echarts/dist/echarts.min.js',
       'antd/dist/antd.min.css',
+      'script!echarts-wordcloud/dist/echarts-wordcloud.min.js',
     ]
   },
   output: {

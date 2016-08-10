@@ -5,7 +5,8 @@
   border-bottom: 1px solid #eee;
   height: 50px;
   padding: 0 4%;
-  width: 100%
+  width: 100%;
+  text-align: center;
 }
 
 #footer {
@@ -39,13 +40,10 @@ div.main-container {
 }
 
 #wmd-view {
-  overflow-y: auto;
   width: 100%;
   background: #fcfcfc;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
 }
 
 #wmd-editor{
@@ -65,4 +63,22 @@ div.main-container {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+}
+
+#go {
+  padding: 30px;
+}
+
+#go .ant-btn {
+  width: 100%;
+}
+
+.App-logo {
+  margin-top: 3px;
+  animation: spin infinite 5s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

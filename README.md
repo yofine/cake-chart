@@ -1,3 +1,27 @@
-As instant noodles,instant-chart give you a simple way to generate a chart :)
+Redux Boilerplate
+========================
 
-![](http://i1.piimg.com/567571/0c4e246f2fc66086.png)
+## Features
+* Uses [Redux](http://redux.js.org/)
+* Based on [React](https://facebook.github.io/react/)
+* Build with [webpack](https://webpack.github.io/)
+* Store with [Immutable.js](https://facebook.github.io/immutable-js/)
+
+### Prerequisites for developing
+You will need to install:
+- [Node.js](https://nodejs.org/) v4.2+
+
+## Usage
+
+```
+git clone git@github.com/yofine/redux-boilerplate.git
+cd redux-boilerplate
+npm install
+npm start
+
+```
+Go to [http://localhost:3000/](http://localhost:3000/)
+
+## Troubleshooting
+You can use powershell to run the command. But when you use same window to command for another project, you may got erorro.
+To fix this, you can open a new window for new project.

@@ -8,7 +8,6 @@ body{
 }
 #flex-container {
   display: flex;
-  flex-direction: column;
 }
 header {
   flex: 0 0 50px;

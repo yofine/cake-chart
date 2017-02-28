@@ -3,19 +3,20 @@ var webpack = require('webpack')
 
 module.exports = {
   devtool: 'eval',
-  context: path.join(__dirname, 'src'),
+  context: path.resolve(__dirname, './src'),
   entry: {
     app: [
-      './src/index',
+      'babel-polyfill',
+      './index.js',
     ],
     vendor: [
       'echarts',
-      'antd/dist/antd.min.css',
       'echarts-wordcloud',
+      'font-awesome/css/font-awesome.css'
     ]
   },
   output: {
-    path: path.join(__dirname, 'build', 'assets'),
+    path: path.resolve(__dirname, './build', './assets'),
     filename: "[name].js",
     publicPath: '/assets/'
   },
@@ -34,7 +35,7 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: /node_modules|build/,
-        loader: 'babel-loader?cacheDirectory=true'
+        loader: 'babel-loader?cacheDirectory=true',
       },
       {
         test: /\.css$/,
@@ -61,5 +62,11 @@ module.exports = {
         loader: "file-loader?name=svg/[name].[ext]"
       },
     ]
+  },
+	devServer: {
+    hot: false,
+    compress: true,
+    contentBase: path.resolve(__dirname, './src'),
+    port: 8089
   }
 }

@@ -2,84 +2,7 @@
 <html>
   <head>
     <title>Cake Chart</title>
-    <style>
-      body, html, #root {
-        height: 100%;
-        overflow: hidden;
-      }
-      body {
-        margin: 0;
-        font-family: Lato, sans-serif;
-        font-size: 0.9em;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: .03rem;
-        background: #232c37;
-      }
-      .flex {
-        display: flex;
-      }
-      .container {
-        height: 100%;
-        display: flex;
-      }
-      .main-nav {
-        display: flex;
-        flex: 0 0 5rem;
-        background-color: #f1f2f2;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .main-content {
-        flex: 1 1 0;
-        height: 100%;
-      }
-      .main-nav .logo {
-        height: 5rem;
-        width: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #808184;
-      }
-      .main-nav .logo img {
-        width: 2.5rem;
-      }
-      .main-nav nav {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .main-nav li {
-        margin: 0;
-        padding: 0;
-        height: 5rem;
-        width: 5rem;
-        text-align: center;
-      }
-      .main-nav li a {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #616a79;
-      }
-      .main-nav li a.router-active {
-        color: #ffe100;
-        background-color: #232c37;
-      }
-    </style>
+    <link href="./cake.css" rel="stylesheet">
   </head>
   <body>
     <div id="root">
@@ -91,15 +14,33 @@
           <nav>
             <ul>
               <li>
-                <a class="router-active"><span>地图</span></a>
+                <a><span>地图</span></a>
               </li>
               <li>
-                <a><span>词云</span></a>
+                <a class="router-active"><span>词云</span></a>
+              </li>
+              <li>
+                <a><span>饼图</span></a>
+              </li>
+              <li>
+                <a><span>折线</span></a>
+              </li>
+              <li>
+                <a><span>柱形</span></a>
+              </li>
+              <li>
+                <a><span>雷达</span></a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="main-content flex">
+          <div class="data-view">
+          </div>
+          <div class="chart-view">
+          </div>
+          <div class="configurar-view">
+          </div>
         </div>
       </div>
     </div>

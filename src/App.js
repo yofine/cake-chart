@@ -2,25 +2,47 @@ import React from 'react'
 import TypeSelector from './components/TypeSelector'
 import Configuration from './components/Configuration'
 import Chart from './components/Chart'
-import './index.css'
+import './cake.css'
 
 export default class App extends React.Component {
   render() {
     return (
-      <div id="flex-container">
-        <header></header>
-        <main>
-          <aside>
-            <i className="fa fa-bars"></i>
-            <i className="fa fa-home"></i>
-            <i className="fa fa-search"></i>
-            <i className="fa fa-user"></i>
-            <i className="fa fa-cog"></i>
-            <i className="fa fa-soundcloud"></i>
-          </aside>
-          <section className="content">
-          </section>
-        </main>
+      <div className="container">
+        <div className="main-nav">
+          <a className="logo">
+            <img src="https://chriswrightdesign.com/img/logo_cw.svg" />
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a><span>地图</span></a>
+              </li>
+              <li>
+                <a className="router-active"><span>词云</span></a>
+              </li>
+              <li>
+                <a><span>饼图</span></a>
+              </li>
+              <li>
+                <a><span>折线</span></a>
+              </li>
+              <li>
+                <a><span>柱形</span></a>
+              </li>
+              <li>
+                <a><span>雷达</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="main-content flex">
+          <div className="data-view">
+          </div>
+          <div className="chart-view">
+          </div>
+          <div className="configurar-view">
+          </div>
+        </div>
       </div>
     )
   }

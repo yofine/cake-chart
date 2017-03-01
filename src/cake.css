@@ -1,0 +1,95 @@
+body, html, #root {
+  height: 100%;
+  font-size: 12px !important;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .03rem;
+  background: #232c37;
+}
+.flex {
+  display: flex;
+}
+.container {
+  height: 100%;
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  flex: 0 0 5rem;
+  background-color: #f1f2f2;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-nav .logo {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #108184;
+}
+.main-nav .logo img {
+  width: 2.5rem;
+}
+.main-nav nav {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+.main-nav li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #616a79;
+}
+.main-nav li a.router-active {
+  color: #ffe100;
+  background-color: #232c37;
+}
+.main-content {
+  display: flex;
+  flex: 1 1 0;
+  height: 100%;
+}
+.main-content .data-view {
+  flex: 1 1 0;
+  height: 100%;
+  background-color: #132c37;
+}
+
+.main-content .chart-view {
+  flex: 1 1 0;
+  height: 100%;
+  background-color: #932c37;
+}
+
+.main-content .configurar-view {
+  flex: 0 0 15rem;
+  background-color: #252c37;
+  height: 100%;
+}

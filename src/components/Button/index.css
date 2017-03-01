@@ -1,0 +1,22 @@
+.button-primary {
+    color: #222;
+    background: #ffe100;
+    border: none
+}
+
+.button-secondary {
+    color: #ddd;
+    background: #639;
+    border: none
+}
+
+.button {
+    height: 30px;
+    height: 2.5rem;
+    font-size: 14px;
+    font-size: 1.16667rem;
+    line-height: 14px;
+    line-height: 1.16667rem;
+    padding-top: 8px;
+    padding-top: .66667rem
+}

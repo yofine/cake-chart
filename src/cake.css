@@ -3,6 +3,7 @@ body, html, #root {
   font-size: 12px !important;
   overflow: hidden;
 }
+
 body {
   margin: 0;
   font-family: Lato, sans-serif;
@@ -10,7 +11,37 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: .03rem;
-  background: #232c37;
+  background: #607D8B;
+}
+
+button {
+	display: inline-block;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: .05rem;
+	text-align: center;
+	text-transform: none;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: 2px;
+	border-radius: .16667rem;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	height: 30px;
+	height: 2.5rem;
+	font-size: 14px;
+	font-size: 1.16667rem;
+	line-height: 14px;
+	line-height: 1.16667rem;
+	padding-top: 8px;
+	padding-top: .66667rem;
+	padding: 1.3rem 2.2rem;
+	height: 4.4rem;
+	font-size: 1.2rem;
+	color: #ddd;
+	background: #616a79;
+	border: none
 }
 .flex {
   display: flex;
@@ -22,7 +53,7 @@ body {
 .main-nav {
   display: flex;
   flex: 0 0 5rem;
-  background-color: #f1f2f2;
+  background-color: #455A64;
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
@@ -35,7 +66,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #108184;
+  background-color: #607D8B;
 }
 .main-nav .logo img {
   width: 2.5rem;
@@ -77,19 +108,34 @@ nav ul {
   height: 100%;
 }
 .main-content .data-view {
-  flex: 1 1 0;
+  display: flex;
+  flex: 2;
   height: 100%;
-  background-color: #132c37;
+  background-color: #ECEFF1;
+  flex-direction: column;
+}
+.main-content .data-view .hot-table {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+
+.main-content .data-view .action-container {
+  display: flex;
+  flex: 0 0 5rem;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #546E7A;
 }
 
 .main-content .chart-view {
-  flex: 1 1 0;
+  flex: 5;
   height: 100%;
-  background-color: #932c37;
+  background-color: #78909C;
 }
 
 .main-content .configurar-view {
-  flex: 0 0 15rem;
-  background-color: #252c37;
+  flex: 0 0 20rem;
+  background-color: #455A64;
   height: 100%;
 }

@@ -12,7 +12,8 @@ module.exports = {
     vendor: [
       'echarts',
       'echarts-wordcloud',
-      'font-awesome/css/font-awesome.css'
+      'font-awesome/css/font-awesome.css',
+      'handsontable/dist/handsontable.full.min.css'
     ]
   },
   output: {
@@ -31,6 +32,7 @@ module.exports = {
     new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('development')}})
   ],
   module: {
+    noParse: [/handsontable.full.js/],
     loaders: [
       {
         test: /\.js?$/,

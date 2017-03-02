@@ -69,6 +69,7 @@ module.exports = {
     hot: false,
     compress: true,
     contentBase: path.resolve(__dirname, './src'),
-    port: 8089
+    port: 8089,
+    historyApiFallback: true,
   }
 }

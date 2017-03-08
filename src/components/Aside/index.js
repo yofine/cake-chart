@@ -1,32 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router'
+import classNames from 'classnames'
 
 export default props => {
-  debugger
+  const { routes, logoImage } = props
   return (
     <div className="main-nav">
       <a className="logo">
-        <img src="https://chriswrightdesign.com/img/logo_cw.svg" />
+        <img src={logoImage} />
       </a>
       <nav>
         <ul>
-          <li>
-            <a><span>地图</span></a>
-          </li>
-          <li>
-            <a className="router-active"><span>词云</span></a>
-          </li>
-          <li>
-            <a><span>饼图</span></a>
-          </li>
-          <li>
-            <a><span>折线</span></a>
-          </li>
-          <li>
-            <a><span>柱形</span></a>
-          </li>
-          <li>
-            <a><span>雷达</span></a>
-          </li>
+          {routes[0].childRoutes.map(e => {
+            const activeClass = classNames({
+              'router-active': e.path == routes[1].path
+            })
+            return (
+              <li key={e.path}>
+                <Link className={activeClass} to={e.path}><span>{e.display}</span></Link>
+              </li>
+            )
+          })}
         </ul>
       </nav>
     </div>
